@@ -1,0 +1,409 @@
+/*--------------------
+  For Activity use: v20231215
+--------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%; }
+
+* {
+  font-family: Arial, 'Microsoft YaHei', "Microsoft JhengHei", sans-serif;
+   box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* HEADER */
+.music{
+	width:37px;
+	height:37px;
+	background:url(../img/icon.png) 0 -37px;
+	position:absolute;
+	top: 20px;
+  left: 87%;
+  z-index: 7;
+	cursor:pointer;
+	-webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+	}
+.music-stop{
+	width:37px;
+	height:37px;
+	background:url(../img/icon.png) 0 0;
+	position:absolute;
+  top: 20px;
+  left: 87%;
+	cursor:pointer;
+  z-index: 7;
+	-webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+	}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}	
+
+body canvas {
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+body>.container {
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+.space5 {
+  height: 5px;
+}
+.space10 {
+  height: 10px;
+}
+.space15 {
+  height: 15px;
+}
+.space20 {
+  height: 10px;
+}
+.space30 {
+  height: 30px;
+}
+.space50 {
+  height: 50px;
+}
+.btn {
+  cursor: pointer;
+}
+.btn:active {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+/*-------------------- Header  --------------------*/
+.nav {
+  position: relative;
+  z-index: 7;
+}
+.nav .home {
+  width: 14%;
+  padding-bottom: 14%;
+  position: absolute;
+  left: 27px;
+  top: 18px;
+  display: block;
+  cursor: pointer;
+  background-position: center 0;
+  background-size: 100% auto;
+  background-image: url(../img/home-icon.png);
+
+}
+.nav .home:hover {
+  transition: all 300ms;
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05); 
+}
+.nav .home:active {
+-webkit-transform: scale(0.95);
+-moz-transform: scale(0.95);
+-ms-transform: scale(0.95);
+-o-transform: scale(0.95);
+transform: scale(0.95);
+
+}
+.event-date {
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 94%;
+  margin: auto;
+  color: #fff;
+  padding: 0;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.base-bg-extend-box {
+  position: relative;
+}
+.base-bg-extend-top {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -5.5%;
+}
+.base-bg-extend-bottom {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.base-bg-extend-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 6% 0;
+  z-index: 1;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+.base-bg-extend-content {
+  position: relative;
+  z-index: 4;
+
+}
+ol.rule {
+  color: #ffffff;
+  text-align: left;
+  list-style-type: decimal;
+  margin: 0 0 0 1.3rem;
+  font-size: clamp(12px 4vw 16px);
+  text-align: justify;
+  text-justify: inter-word;
+}
+ol.rule li {
+  margin-bottom: 10px;
+  font-size: clamp(12px, 3.9vw, 32px);
+  font-weight: 500;
+  font-family: Arial, 'Microsoft YaHei', "Microsoft JhengHei", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.rule-link {
+  text-align: left;
+  padding-right: 15px;
+  margin: 40px 0 0 20px;
+}
+
+.hr {
+  display: block;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  margin: 0.7em 0;
+}
+/*-------------------- Footer  --------------------*/
+.footer {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+/*-------------------- Popup  --------------------*/
+.popup{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 20;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+/*使視窗置中*/
+.popup:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.05em;
+}
+.popup-content {
+  max-width: 92%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 30px auto;
+  width: 760px;
+  position: relative;
+  color:#fff;
+}
+
+.pop-titles {
+  background-image: url(../img/popup-title.png);
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 76%;
+  padding-bottom: 29.5%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.pop-close {
+  background-image: url(../img/icon_back.png);
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 50%;
+  padding-bottom: 16.5%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.pop-close:active {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+/*------------- ca loading --------------*/
+.preloader {
+  position: fixed;
+  z-index: 999999999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #e6f3e8;
+}
+.preloader .preloader-inner {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.preloader .spinner-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.preloader .spinner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #7dbf6d;
+  border-top-color: #cef9db;
+  border-radius: 50%;
+  animation: loader-rotate 1s linear infinite;
+  margin: auto;
+  box-shadow: 0 0 200px rgba(171, 248, 235, 0.733);
+
+  
+
+}
+.preloader .preloader-text {
+  color:  #2a503a;
+  margin: auto;
+  text-align: center;
+  padding: 0 10%;
+}
+.preloader img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60%;
+}
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); }
+}
+
