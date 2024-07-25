@@ -1,0 +1,337 @@
+/*-------------------- START --------------------*/
+body {
+  font-size: 16px;
+  background: #e4f0e7 url(../img/background.jpg) center top no-repeat;
+  background-repeat: no-repeat;
+  line-height: 1.4em;
+  overflow-x: hidden;
+
+}
+body , html {
+  min-width: 1200px;
+  min-height: 1996px;
+}
+
+
+/*-------------------- Header  --------------------*/
+.header {
+  padding-top: 13px;
+}
+.event-title {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  left: 0%;
+  align-items: center;
+  margin: 0 auto 0;
+  padding: 0 0 0 0;
+  transform: translatey(0px);
+	animation: float 5.5s ease-in-out infinite;
+  z-index: 5;
+}
+
+/*-------------------- Content  --------------------*/
+body>.container>.content {
+  position: relative;
+  z-index: 3;
+  margin-top: 38%;
+}
+
+/* area03 */
+.event-area03 {
+  width: 844px;
+  max-width: 100%;
+  margin:  auto;
+  top: -79px;
+
+}
+.event-area03 .boxtop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: none;
+  margin: -13% auto 0;
+  z-index: 2;
+}
+.event-area03 .base-bg-extend-content {
+  padding: 3% 6% 7%;
+}
+
+.event-area03 .deco02 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -36% -7% 0 0;
+  z-index: 1;
+  -webkit-animation: jumpy 1.7s 0.5s linear infinite;
+  animation: jumpy 1.7s 0.5s linear infinite;
+  transform-origin: 0% 100%;
+}
+.event-area03 .deco03 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: -29% auto 0;
+  z-index: 1;
+}
+
+.btn-title{
+  background: url(../img/btn_title.png) no-repeat center center / 100% 100%;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.95em;
+  padding: 30px 98px;
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  margin: 0 0 5px 0;
+}
+.sub-title{
+  background: url(../img/bg_subtitle.png) no-repeat center center / 100% 100%;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.95em;
+  padding: 30px 98px;
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  margin: 0 0 5px 0;
+}
+
+
+.event-action {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  background-image: url('../img/Header_box.png');
+  position: absolute;
+  left: 16%;
+  right: 0;
+  top: -38%;
+  z-index: 4;
+  width: 66%;
+  height: 290px;
+}
+
+.deco_box {
+  position: absolute;
+  z-index: 2;
+  left: -16%;
+  top: 83%;
+  width: 130%;
+  align-items: center;
+  margin: 0% auto 0;
+
+  
+}
+
+/*累積投注*/
+.betflow-box {
+  position: absolute;
+  bottom: 26%;
+  left: -4%;
+  right: 0;
+  margin: auto;
+  display: flex;
+  height: 24%;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.4;
+  align-items: center;
+  color: #3d894d;
+  width:70%;
+  flex-direction: column;
+}
+.betflow-box h3 {
+  font-size: 32px;
+  font-weight: normal;
+  position: absolute; /* added */
+  top: 2%;
+  left: 7%;
+  right: 0; /* added */
+  bottom: 0; /* added */
+  margin: 10px 0 0 0;
+
+}
+.betflow-box .btn-refresh.refreshing {
+  -webkit-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite;
+}
+
+.back-text {
+  color: #565656;
+  font-family: Arial, 'Microsoft YaHei', "Microsoft JhengHei", sans-serif;
+  margin-top: 3%;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.6;
+
+  text-justify: inter-word;
+}
+
+
+
+.intro-text {
+  color: #565656;
+  font-family: Arial, 'Microsoft YaHei', "Microsoft JhengHei", sans-serif;
+  margin-top: 3%;
+  font-size: 1.17em;
+  text-align: center;
+  line-height: 1.6;
+}
+@font-face {
+  font-family:'Source-Han-Sans-CN-Normal';
+  font-family: 'SourceHan.otf';
+  src: url('../font/SourceHan.otf') format(truetype);
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+}
+.table tr th {
+    color: #fff;
+    background-color: #6c8f46;
+    border: 2px solid #e1fde1;
+    padding: 12px 8px;
+    font-weight: normal;
+}
+.table tr td {
+  color: #4d583a;
+  background-color: #d3e6b3;
+    border: 2px solid #e1fde1;
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+.highlight {
+  display: inline-block;
+  color: #ffdf48;
+  text-align: left;
+}
+/*-------------------- Rule  --------------------*/
+ol.rule {
+  color: #846637;
+  margin: 0 0 0 1.6rem;
+  margin-top: -38%;
+  font-size: 1.03em;
+  line-height: 1.7em;
+  letter-spacing: 0.02em;
+  width: 85%;
+  font-family: Arial, 'Microsoft YaHei', "Microsoft JhengHei", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+ol.rule li {
+  margin-bottom: 0px;
+
+
+}
+
+.rule-link {
+    text-align: left;
+    padding-right: 15px;
+    margin: 10px 0 0 20px;
+}
+.rule-link a {
+    color: #bb2520;
+    font-size: 1em;
+    
+}
+.rule-wrap {
+  width: 88%;
+  margin: auto;
+}
+.btn-rule {
+  position: relative;
+  display: block;
+ width: 250px;
+margin: 0 auto 0;
+  
+}
+
+.popup-title {
+  position: relative;
+  display: block;
+ width: 250px;
+ bottom: 640px;
+margin: 0 auto 0;
+  
+}
+/*-------------------- Footer  --------------------*/
+.footer {
+  color: #5c5d5c;
+  font-size: 28px;
+  padding: 15px 0;
+top: 20px;
+  text-align: center;
+  margin-top: 100px;
+  height: auto;
+  position: relative;
+}
+.footer p {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 18px;
+}
+.popup-rule .popup-content {
+  margin: 0% auto;
+  width: 700px;
+ 
+
+}
+.popup-rule .pop-rule-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: -11% auto 0;
+  width: 83%;
+  z-index: 2;
+}
+.popup-rule .pop-close{
+  background-image: url(../img/icon_back.png);
+  top: 367px;
+  left: 243.5px;
+  z-index: 7;
+  cursor: pointer;
+}
+
+.popup-rule .pop-title{
+  background-image: url(../img/popup-title.png);
+  top: -78px;
+  left: 165.5px;
+  z-index: 7;
+  cursor: pointer;
+}
+
+
+.popup-rule .base-bg-extend-content {
+  padding: 0% 0% 0% 10%;
+}
+.popup-rule .pop-rule-deco {
+  width: auto;
+    position: absolute;
+    right: 23.2%;
+    top: 10%;
+    bottom: 0;
+    margin: 0 -1% 2% 0;
+}
+
+.box-rules {
+
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 2%;
+  top: -30%;
+  display: block;
+  position: absolute;
+
+  
+}
+
